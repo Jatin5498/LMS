@@ -2,7 +2,7 @@
 // file having set of endpoints which helps in authentication-related operations
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 import { userLoggedIN, userLoggedOut } from "../authSlice";
-const USER_API = "http://localhost:8080/api/v1/user/" //define api object a base url for the api
+const USER_API = "https://learning-platform-rcby.onrender.com/api/v1/user/" //define api object a base url for the api
 export const authApi =createApi({
       reducerPath:"authApi",
       baseQuery:fetchBaseQuery({
