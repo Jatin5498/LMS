@@ -17,7 +17,7 @@ const PORT=process.env.PORT||3000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"http://localhost:5173", //front end url
+    origin:"https://lms-platform-vlt8.onrender.com", //front end url
     credentials:true
 }));
 app.use("/api/v1/media",mediaRoute);
