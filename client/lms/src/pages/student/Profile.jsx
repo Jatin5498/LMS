@@ -74,7 +74,7 @@ const Profile=()=> {
             <h1 className="font-semibold text-gray-900 dark:text-gray-100 ">
               Name:
               <span className="font-normal text-gray-700 dark:text-gray-300 ml-2">
-               {user.name}
+               {user?.name}
               </span>
             </h1>
           </div>
@@ -82,7 +82,7 @@ const Profile=()=> {
             <h1 className="font-semibold text-gray-900 dark:text-gray-100 ">
               Email:
               <span className="font-normal text-gray-700 dark:text-gray-300 ml-2">
-              {user.email}
+              {user?.email}
               </span>
               </h1>
           </div>
@@ -90,7 +90,7 @@ const Profile=()=> {
             <h1 className="font-semibold text-gray-900 dark:text-gray-100 ">
               Role:
               <span className="font-normal text-gray-700 dark:text-gray-300 ml-2">
-              {user.role.toUpperCase()}
+              {user?.role.toUpperCase()}
               </span>
             </h1>
           </div>
@@ -152,7 +152,7 @@ const Profile=()=> {
              {user.enrolledCourses.length === 0 ? (
                <h1>You haven't enrolled yet</h1>
              ) : (
-               user.enrolledCourses.map((course) => (
+               user?.enrolledCourses.map((course) => (
                  <Course course={course} key={course} />
                ))
              )}
